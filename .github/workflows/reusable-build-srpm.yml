@@ -26,7 +26,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Prepare source tarball for SRPM
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: WasmEdge-${{ inputs.version }}-src.tar.gz
           path: /github/home/rpmbuild/SOURCES
